@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2A8D54827E5052700DF41C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D54727E5052700DF41C2 /* AppDelegate.swift */; };
+		F2A8D54A27E5052700DF41C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D54927E5052700DF41C2 /* SceneDelegate.swift */; };
+		F2A8D54C27E5052700DF41C2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D54B27E5052700DF41C2 /* HomePageViewController.swift */; };
+		F2A8D55427E5052800DF41C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8D55227E5052800DF41C2 /* LaunchScreen.storyboard */; };
+		F2A8D55F27E5052900DF41C2 /* _0___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D55E27E5052900DF41C2 /* _0___Tests.swift */; };
+		F2A8D56927E5052900DF41C2 /* _0___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D56827E5052900DF41C2 /* _0___UITests.swift */; };
+		F2A8D57627E5072500DF41C2 /* FrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D57527E5072500DF41C2 /* FrameModel.swift */; };
+		F2A8D57827E507E100DF41C2 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D57727E507E100DF41C2 /* HomePageCollectionViewCell.swift */; };
+		F2A8D57A27E50ADE00DF41C2 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8D57927E50ADE00DF41C2 /* Tone.swift */; };
+		FA2BF3B8297E8872002422F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2BF3B7297E8871002422F8 /* AVFoundation.framework */; };
+		FA2BF3BA297E8B74002422F8 /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2BF3B9297E8B74002422F8 /* AVFAudio.framework */; };
+		FA2BF3BD297E9033002422F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3BC297E9033002422F8 /* Assets.xcassets */; };
+		FA2BF3EB297EAC45002422F8 /* ㄹ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C2297EAC45002422F8 /* ㄹ.mp3 */; };
+		FA2BF3EC297EAC45002422F8 /* ㄸ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C3297EAC45002422F8 /* ㄸ.mp3 */; };
+		FA2BF3ED297EAC45002422F8 /* ㅜ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C4297EAC45002422F8 /* ㅜ.mp3 */; };
+		FA2BF3EE297EAC45002422F8 /* ㅋ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C5297EAC45002422F8 /* ㅋ.mp3 */; };
+		FA2BF3EF297EAC45002422F8 /* ㅊ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C6297EAC45002422F8 /* ㅊ.mp3 */; };
+		FA2BF3F0297EAC45002422F8 /* ㅝ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C7297EAC45002422F8 /* ㅝ.mp3 */; };
+		FA2BF3F1297EAC45002422F8 /* ㅟ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C8297EAC45002422F8 /* ㅟ.mp3 */; };
+		FA2BF3F2297EAC45002422F8 /* ㅈ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3C9297EAC45002422F8 /* ㅈ.mp3 */; };
+		FA2BF3F3297EAC45002422F8 /* ㅉ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CA297EAC45002422F8 /* ㅉ.mp3 */; };
+		FA2BF3F4297EAC45002422F8 /* ㅞ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CB297EAC45002422F8 /* ㅞ.mp3 */; };
+		FA2BF3F5297EAC45002422F8 /* ㅍ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CC297EAC45002422F8 /* ㅍ.mp3 */; };
+		FA2BF3F6297EAC45002422F8 /* ㅚ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CD297EAC45002422F8 /* ㅚ.mp3 */; };
+		FA2BF3F7297EAC45002422F8 /* ㅛ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CE297EAC45002422F8 /* ㅛ.mp3 */; };
+		FA2BF3F8297EAC45002422F8 /* ㅌ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3CF297EAC45002422F8 /* ㅌ.mp3 */; };
+		FA2BF3F9297EAC45002422F8 /* ㅎ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D0297EAC45002422F8 /* ㅎ.mp3 */; };
+		FA2BF3FA297EAC45002422F8 /* ㅙ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D1297EAC45002422F8 /* ㅙ.mp3 */; };
+		FA2BF3FB297EAC45002422F8 /* ㅘ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D2297EAC45002422F8 /* ㅘ.mp3 */; };
+		FA2BF3FC297EAC45002422F8 /* ㅏ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D3297EAC45002422F8 /* ㅏ.mp3 */; };
+		FA2BF3FD297EAC45002422F8 /* ㅂ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D4297EAC45002422F8 /* ㅂ.mp3 */; };
+		FA2BF3FE297EAC45002422F8 /* ㅕ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D5297EAC45002422F8 /* ㅕ.mp3 */; };
+		FA2BF3FF297EAC45002422F8 /* ㅔ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D6297EAC45002422F8 /* ㅔ.mp3 */; };
+		FA2BF400297EAC45002422F8 /* ㅃ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D7297EAC45002422F8 /* ㅃ.mp3 */; };
+		FA2BF401297EAC45002422F8 /* ㅁ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D8297EAC45002422F8 /* ㅁ.mp3 */; };
+		FA2BF402297EAC45002422F8 /* ㅖ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3D9297EAC45002422F8 /* ㅖ.mp3 */; };
+		FA2BF403297EAC45002422F8 /* ㅗ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DA297EAC45002422F8 /* ㅗ.mp3 */; };
+		FA2BF404297EAC45002422F8 /* ㅓ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DB297EAC45002422F8 /* ㅓ.mp3 */; };
+		FA2BF405297EAC45002422F8 /* ㅅ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DC297EAC45002422F8 /* ㅅ.mp3 */; };
+		FA2BF406297EAC45002422F8 /* ㅒ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DD297EAC45002422F8 /* ㅒ.mp3 */; };
+		FA2BF407297EAC45002422F8 /* ㅐ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DE297EAC45002422F8 /* ㅐ.mp3 */; };
+		FA2BF408297EAC45002422F8 /* ㅇ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3DF297EAC45002422F8 /* ㅇ.mp3 */; };
+		FA2BF409297EAC45002422F8 /* ㅆ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E0297EAC45002422F8 /* ㅆ.mp3 */; };
+		FA2BF40A297EAC45002422F8 /* ㅑ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E1297EAC45002422F8 /* ㅑ.mp3 */; };
+		FA2BF40B297EAC45002422F8 /* ㅠ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E2297EAC45002422F8 /* ㅠ.mp3 */; };
+		FA2BF40C297EAC45002422F8 /* ㅡ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E3297EAC45002422F8 /* ㅡ.mp3 */; };
+		FA2BF40D297EAC45002422F8 /* ㄷ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E4297EAC45002422F8 /* ㄷ.mp3 */; };
+		FA2BF40E297EAC45002422F8 /* ㅣ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E5297EAC45002422F8 /* ㅣ.mp3 */; };
+		FA2BF40F297EAC45002422F8 /* ㅢ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E6297EAC45002422F8 /* ㅢ.mp3 */; };
+		FA2BF410297EAC45002422F8 /* ㄴ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E7297EAC45002422F8 /* ㄴ.mp3 */; };
+		FA2BF412297EAC45002422F8 /* ㄱ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3E9297EAC45002422F8 /* ㄱ.mp3 */; };
+		FA2BF413297EAC45002422F8 /* ㄲ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA2BF3EA297EAC45002422F8 /* ㄲ.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2A8D55B27E5052900DF41C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A8D53C27E5052700DF41C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A8D54327E5052700DF41C2;
+			remoteInfo = "50音練習";
+		};
+		F2A8D56527E5052900DF41C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A8D53C27E5052700DF41C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A8D54327E5052700DF41C2;
+			remoteInfo = "50音練習";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2A8D54427E5052700DF41C2 /* 50音練習.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "50音練習.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A8D54727E5052700DF41C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2A8D54927E5052700DF41C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2A8D54B27E5052700DF41C2 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		F2A8D55327E5052800DF41C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2A8D55527E5052800DF41C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A8D55A27E5052900DF41C2 /* 50音練習Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "50音練習Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A8D55E27E5052900DF41C2 /* _0___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_0___Tests.swift"; sourceTree = "<group>"; };
+		F2A8D56427E5052900DF41C2 /* 50音練習UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "50音練習UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A8D56827E5052900DF41C2 /* _0___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_0___UITests.swift"; sourceTree = "<group>"; };
+		F2A8D57527E5072500DF41C2 /* FrameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameModel.swift; sourceTree = "<group>"; };
+		F2A8D57727E507E100DF41C2 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2A8D57927E50ADE00DF41C2 /* Tone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone.swift; sourceTree = "<group>"; };
+		FA2BF3B7297E8871002422F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA2BF3B9297E8B74002422F8 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		FA2BF3BC297E9033002422F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2BF3C2297EAC45002422F8 /* ㄹ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄹ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C3297EAC45002422F8 /* ㄸ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄸ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C4297EAC45002422F8 /* ㅜ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅜ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C5297EAC45002422F8 /* ㅋ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅋ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C6297EAC45002422F8 /* ㅊ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅊ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C7297EAC45002422F8 /* ㅝ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅝ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C8297EAC45002422F8 /* ㅟ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅟ.mp3"; sourceTree = "<group>"; };
+		FA2BF3C9297EAC45002422F8 /* ㅈ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅈ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CA297EAC45002422F8 /* ㅉ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅉ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CB297EAC45002422F8 /* ㅞ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅞ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CC297EAC45002422F8 /* ㅍ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅍ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CD297EAC45002422F8 /* ㅚ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅚ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CE297EAC45002422F8 /* ㅛ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅛ.mp3"; sourceTree = "<group>"; };
+		FA2BF3CF297EAC45002422F8 /* ㅌ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅌ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D0297EAC45002422F8 /* ㅎ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅎ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D1297EAC45002422F8 /* ㅙ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅙ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D2297EAC45002422F8 /* ㅘ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅘ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D3297EAC45002422F8 /* ㅏ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅏ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D4297EAC45002422F8 /* ㅂ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅂ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D5297EAC45002422F8 /* ㅕ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅕ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D6297EAC45002422F8 /* ㅔ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅔ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D7297EAC45002422F8 /* ㅃ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅃ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D8297EAC45002422F8 /* ㅁ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅁ.mp3"; sourceTree = "<group>"; };
+		FA2BF3D9297EAC45002422F8 /* ㅖ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅖ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DA297EAC45002422F8 /* ㅗ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅗ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DB297EAC45002422F8 /* ㅓ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅓ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DC297EAC45002422F8 /* ㅅ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅅ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DD297EAC45002422F8 /* ㅒ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅒ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DE297EAC45002422F8 /* ㅐ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅐ.mp3"; sourceTree = "<group>"; };
+		FA2BF3DF297EAC45002422F8 /* ㅇ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅇ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E0297EAC45002422F8 /* ㅆ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅆ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E1297EAC45002422F8 /* ㅑ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅑ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E2297EAC45002422F8 /* ㅠ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅠ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E3297EAC45002422F8 /* ㅡ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅡ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E4297EAC45002422F8 /* ㄷ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄷ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E5297EAC45002422F8 /* ㅣ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅣ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E6297EAC45002422F8 /* ㅢ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㅢ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E7297EAC45002422F8 /* ㄴ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄴ.mp3"; sourceTree = "<group>"; };
+		FA2BF3E9297EAC45002422F8 /* ㄱ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄱ.mp3"; sourceTree = "<group>"; };
+		FA2BF3EA297EAC45002422F8 /* ㄲ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ㄲ.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2A8D54127E5052700DF41C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BF3B8297E8872002422F8 /* AVFoundation.framework in Frameworks */,
+				FA2BF3BA297E8B74002422F8 /* AVFAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D55727E5052900DF41C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D56127E5052900DF41C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2A8D53B27E5052700DF41C2 = {
+			isa = PBXGroup;
+			children = (
+				F2A8D54627E5052700DF41C2 /* 50音練習 */,
+				F2A8D55D27E5052900DF41C2 /* 50音練習Tests */,
+				F2A8D56727E5052900DF41C2 /* 50音練習UITests */,
+				F2A8D54527E5052700DF41C2 /* Products */,
+				FA2BF3B6297E8871002422F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2A8D54527E5052700DF41C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2A8D54427E5052700DF41C2 /* 50音練習.app */,
+				F2A8D55A27E5052900DF41C2 /* 50音練習Tests.xctest */,
+				F2A8D56427E5052900DF41C2 /* 50音練習UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2A8D54627E5052700DF41C2 /* 50音練習 */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF415297EB2C3002422F8 /* 40tone */,
+				FA2BF3BC297E9033002422F8 /* Assets.xcassets */,
+				F2A8D54727E5052700DF41C2 /* AppDelegate.swift */,
+				F2A8D54927E5052700DF41C2 /* SceneDelegate.swift */,
+				F2A8D54B27E5052700DF41C2 /* HomePageViewController.swift */,
+				F2A8D57727E507E100DF41C2 /* HomePageCollectionViewCell.swift */,
+				F2A8D55227E5052800DF41C2 /* LaunchScreen.storyboard */,
+				F2A8D55527E5052800DF41C2 /* Info.plist */,
+				F2A8D57527E5072500DF41C2 /* FrameModel.swift */,
+				F2A8D57927E50ADE00DF41C2 /* Tone.swift */,
+			);
+			path = "50音練習";
+			sourceTree = "<group>";
+		};
+		F2A8D55D27E5052900DF41C2 /* 50音練習Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A8D55E27E5052900DF41C2 /* _0___Tests.swift */,
+			);
+			path = "50音練習Tests";
+			sourceTree = "<group>";
+		};
+		F2A8D56727E5052900DF41C2 /* 50音練習UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A8D56827E5052900DF41C2 /* _0___UITests.swift */,
+			);
+			path = "50音練習UITests";
+			sourceTree = "<group>";
+		};
+		FA2BF3B6297E8871002422F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF3B9297E8B74002422F8 /* AVFAudio.framework */,
+				FA2BF3B7297E8871002422F8 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2BF415297EB2C3002422F8 /* 40tone */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BF3C2297EAC45002422F8 /* ㄹ.mp3 */,
+				FA2BF3C3297EAC45002422F8 /* ㄸ.mp3 */,
+				FA2BF3C4297EAC45002422F8 /* ㅜ.mp3 */,
+				FA2BF3C5297EAC45002422F8 /* ㅋ.mp3 */,
+				FA2BF3C6297EAC45002422F8 /* ㅊ.mp3 */,
+				FA2BF3C7297EAC45002422F8 /* ㅝ.mp3 */,
+				FA2BF3C8297EAC45002422F8 /* ㅟ.mp3 */,
+				FA2BF3C9297EAC45002422F8 /* ㅈ.mp3 */,
+				FA2BF3CA297EAC45002422F8 /* ㅉ.mp3 */,
+				FA2BF3CB297EAC45002422F8 /* ㅞ.mp3 */,
+				FA2BF3CC297EAC45002422F8 /* ㅍ.mp3 */,
+				FA2BF3CD297EAC45002422F8 /* ㅚ.mp3 */,
+				FA2BF3CE297EAC45002422F8 /* ㅛ.mp3 */,
+				FA2BF3CF297EAC45002422F8 /* ㅌ.mp3 */,
+				FA2BF3D0297EAC45002422F8 /* ㅎ.mp3 */,
+				FA2BF3D1297EAC45002422F8 /* ㅙ.mp3 */,
+				FA2BF3D2297EAC45002422F8 /* ㅘ.mp3 */,
+				FA2BF3D3297EAC45002422F8 /* ㅏ.mp3 */,
+				FA2BF3D4297EAC45002422F8 /* ㅂ.mp3 */,
+				FA2BF3D5297EAC45002422F8 /* ㅕ.mp3 */,
+				FA2BF3D6297EAC45002422F8 /* ㅔ.mp3 */,
+				FA2BF3D7297EAC45002422F8 /* ㅃ.mp3 */,
+				FA2BF3D8297EAC45002422F8 /* ㅁ.mp3 */,
+				FA2BF3D9297EAC45002422F8 /* ㅖ.mp3 */,
+				FA2BF3DA297EAC45002422F8 /* ㅗ.mp3 */,
+				FA2BF3DB297EAC45002422F8 /* ㅓ.mp3 */,
+				FA2BF3DC297EAC45002422F8 /* ㅅ.mp3 */,
+				FA2BF3DD297EAC45002422F8 /* ㅒ.mp3 */,
+				FA2BF3DE297EAC45002422F8 /* ㅐ.mp3 */,
+				FA2BF3DF297EAC45002422F8 /* ㅇ.mp3 */,
+				FA2BF3E0297EAC45002422F8 /* ㅆ.mp3 */,
+				FA2BF3E1297EAC45002422F8 /* ㅑ.mp3 */,
+				FA2BF3E2297EAC45002422F8 /* ㅠ.mp3 */,
+				FA2BF3E3297EAC45002422F8 /* ㅡ.mp3 */,
+				FA2BF3E4297EAC45002422F8 /* ㄷ.mp3 */,
+				FA2BF3E5297EAC45002422F8 /* ㅣ.mp3 */,
+				FA2BF3E6297EAC45002422F8 /* ㅢ.mp3 */,
+				FA2BF3E7297EAC45002422F8 /* ㄴ.mp3 */,
+				FA2BF3E9297EAC45002422F8 /* ㄱ.mp3 */,
+				FA2BF3EA297EAC45002422F8 /* ㄲ.mp3 */,
+			);
+			path = 40tone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2A8D54327E5052700DF41C2 /* 50音練習 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A8D56C27E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習" */;
+			buildPhases = (
+				F2A8D54027E5052700DF41C2 /* Sources */,
+				F2A8D54127E5052700DF41C2 /* Frameworks */,
+				F2A8D54227E5052700DF41C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "50音練習";
+			productName = "50音練習";
+			productReference = F2A8D54427E5052700DF41C2 /* 50音練習.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2A8D55927E5052900DF41C2 /* 50音練習Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A8D56F27E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習Tests" */;
+			buildPhases = (
+				F2A8D55627E5052900DF41C2 /* Sources */,
+				F2A8D55727E5052900DF41C2 /* Frameworks */,
+				F2A8D55827E5052900DF41C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A8D55C27E5052900DF41C2 /* PBXTargetDependency */,
+			);
+			name = "50音練習Tests";
+			productName = "50音練習Tests";
+			productReference = F2A8D55A27E5052900DF41C2 /* 50音練習Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2A8D56327E5052900DF41C2 /* 50音練習UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A8D57227E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習UITests" */;
+			buildPhases = (
+				F2A8D56027E5052900DF41C2 /* Sources */,
+				F2A8D56127E5052900DF41C2 /* Frameworks */,
+				F2A8D56227E5052900DF41C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A8D56627E5052900DF41C2 /* PBXTargetDependency */,
+			);
+			name = "50音練習UITests";
+			productName = "50音練習UITests";
+			productReference = F2A8D56427E5052900DF41C2 /* 50音練習UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2A8D53C27E5052700DF41C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F2A8D54327E5052700DF41C2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F2A8D55927E5052900DF41C2 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F2A8D54327E5052700DF41C2;
+					};
+					F2A8D56327E5052900DF41C2 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F2A8D54327E5052700DF41C2;
+					};
+				};
+			};
+			buildConfigurationList = F2A8D53F27E5052700DF41C2 /* Build configuration list for PBXProject "50音練習" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2A8D53B27E5052700DF41C2;
+			productRefGroup = F2A8D54527E5052700DF41C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2A8D54327E5052700DF41C2 /* 50音練習 */,
+				F2A8D55927E5052900DF41C2 /* 50音練習Tests */,
+				F2A8D56327E5052900DF41C2 /* 50音練習UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2A8D54227E5052700DF41C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BF409297EAC45002422F8 /* ㅆ.mp3 in Resources */,
+				FA2BF3FE297EAC45002422F8 /* ㅕ.mp3 in Resources */,
+				FA2BF40D297EAC45002422F8 /* ㄷ.mp3 in Resources */,
+				FA2BF40A297EAC45002422F8 /* ㅑ.mp3 in Resources */,
+				FA2BF40E297EAC45002422F8 /* ㅣ.mp3 in Resources */,
+				FA2BF40B297EAC45002422F8 /* ㅠ.mp3 in Resources */,
+				FA2BF3FA297EAC45002422F8 /* ㅙ.mp3 in Resources */,
+				FA2BF3F3297EAC45002422F8 /* ㅉ.mp3 in Resources */,
+				FA2BF407297EAC45002422F8 /* ㅐ.mp3 in Resources */,
+				FA2BF3FC297EAC45002422F8 /* ㅏ.mp3 in Resources */,
+				FA2BF3F1297EAC45002422F8 /* ㅟ.mp3 in Resources */,
+				FA2BF401297EAC45002422F8 /* ㅁ.mp3 in Resources */,
+				FA2BF404297EAC45002422F8 /* ㅓ.mp3 in Resources */,
+				FA2BF3F2297EAC45002422F8 /* ㅈ.mp3 in Resources */,
+				FA2BF40C297EAC45002422F8 /* ㅡ.mp3 in Resources */,
+				FA2BF400297EAC45002422F8 /* ㅃ.mp3 in Resources */,
+				FA2BF408297EAC45002422F8 /* ㅇ.mp3 in Resources */,
+				FA2BF3F7297EAC45002422F8 /* ㅛ.mp3 in Resources */,
+				FA2BF3F0297EAC45002422F8 /* ㅝ.mp3 in Resources */,
+				FA2BF3EF297EAC45002422F8 /* ㅊ.mp3 in Resources */,
+				FA2BF3EE297EAC45002422F8 /* ㅋ.mp3 in Resources */,
+				FA2BF3EB297EAC45002422F8 /* ㄹ.mp3 in Resources */,
+				FA2BF3ED297EAC45002422F8 /* ㅜ.mp3 in Resources */,
+				FA2BF3F5297EAC45002422F8 /* ㅍ.mp3 in Resources */,
+				FA2BF402297EAC45002422F8 /* ㅖ.mp3 in Resources */,
+				FA2BF405297EAC45002422F8 /* ㅅ.mp3 in Resources */,
+				FA2BF3FB297EAC45002422F8 /* ㅘ.mp3 in Resources */,
+				F2A8D55427E5052800DF41C2 /* LaunchScreen.storyboard in Resources */,
+				FA2BF3FF297EAC45002422F8 /* ㅔ.mp3 in Resources */,
+				FA2BF412297EAC45002422F8 /* ㄱ.mp3 in Resources */,
+				FA2BF406297EAC45002422F8 /* ㅒ.mp3 in Resources */,
+				FA2BF3F4297EAC45002422F8 /* ㅞ.mp3 in Resources */,
+				FA2BF410297EAC45002422F8 /* ㄴ.mp3 in Resources */,
+				FA2BF3BD297E9033002422F8 /* Assets.xcassets in Resources */,
+				FA2BF3EC297EAC45002422F8 /* ㄸ.mp3 in Resources */,
+				FA2BF40F297EAC45002422F8 /* ㅢ.mp3 in Resources */,
+				FA2BF3F6297EAC45002422F8 /* ㅚ.mp3 in Resources */,
+				FA2BF3FD297EAC45002422F8 /* ㅂ.mp3 in Resources */,
+				FA2BF403297EAC45002422F8 /* ㅗ.mp3 in Resources */,
+				FA2BF413297EAC45002422F8 /* ㄲ.mp3 in Resources */,
+				FA2BF3F8297EAC45002422F8 /* ㅌ.mp3 in Resources */,
+				FA2BF3F9297EAC45002422F8 /* ㅎ.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D55827E5052900DF41C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D56227E5052900DF41C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2A8D54027E5052700DF41C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A8D54C27E5052700DF41C2 /* HomePageViewController.swift in Sources */,
+				F2A8D57A27E50ADE00DF41C2 /* Tone.swift in Sources */,
+				F2A8D57627E5072500DF41C2 /* FrameModel.swift in Sources */,
+				F2A8D54827E5052700DF41C2 /* AppDelegate.swift in Sources */,
+				F2A8D57827E507E100DF41C2 /* HomePageCollectionViewCell.swift in Sources */,
+				F2A8D54A27E5052700DF41C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D55627E5052900DF41C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A8D55F27E5052900DF41C2 /* _0___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A8D56027E5052900DF41C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A8D56927E5052900DF41C2 /* _0___UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2A8D55C27E5052900DF41C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A8D54327E5052700DF41C2 /* 50音練習 */;
+			targetProxy = F2A8D55B27E5052900DF41C2 /* PBXContainerItemProxy */;
+		};
+		F2A8D56627E5052900DF41C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A8D54327E5052700DF41C2 /* 50音練習 */;
+			targetProxy = F2A8D56527E5052900DF41C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2A8D55227E5052800DF41C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A8D55327E5052800DF41C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2A8D56A27E5052900DF41C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2A8D56B27E5052900DF41C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2A8D56D27E5052900DF41C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = BMAENCBPZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "50音練習/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---123";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2A8D56E27E5052900DF41C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = BMAENCBPZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "50音練習/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---123";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2A8D57027E5052900DF41C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QNX4TMYK85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/50音練習.app/50音練習";
+			};
+			name = Debug;
+		};
+		F2A8D57127E5052900DF41C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QNX4TMYK85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/50音練習.app/50音練習";
+			};
+			name = Release;
+		};
+		F2A8D57327E5052900DF41C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QNX4TMYK85;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "50音練習";
+			};
+			name = Debug;
+		};
+		F2A8D57427E5052900DF41C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QNX4TMYK85;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "company.50.-0---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "50音練習";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2A8D53F27E5052700DF41C2 /* Build configuration list for PBXProject "50音練習" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A8D56A27E5052900DF41C2 /* Debug */,
+				F2A8D56B27E5052900DF41C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A8D56C27E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A8D56D27E5052900DF41C2 /* Debug */,
+				F2A8D56E27E5052900DF41C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A8D56F27E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A8D57027E5052900DF41C2 /* Debug */,
+				F2A8D57127E5052900DF41C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A8D57227E5052900DF41C2 /* Build configuration list for PBXNativeTarget "50音練習UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A8D57327E5052900DF41C2 /* Debug */,
+				F2A8D57427E5052900DF41C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2A8D53C27E5052700DF41C2 /* Project object */;
+}
